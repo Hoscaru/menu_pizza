@@ -1,0 +1,26 @@
+.pizza-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    text-align: center;
+    background-color: #171820;
+    color: #fdc029;
+    border-radius: 10px;
+    border: 2px solid #fdc029;
+    transition: all 0.5s ease-in-out;
+}
+
+.pizza-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.pizza-card:hover {
+    transform: scale(1.1);
+    border: 2px solid #aa3d01;
+    box-shadow: 0 0 10px 5px #aa3d01;
+}
+
+
