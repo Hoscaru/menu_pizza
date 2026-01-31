@@ -23,4 +23,13 @@
     box-shadow: 0 0 10px 5px #aa3d01;
 }
 
+.pizza {
+    font-size: 20px;
+    color: #ff0808;
+}
+
+.agotado {
+    color: #ff0808;
+    font-weight: bold;
+}
 

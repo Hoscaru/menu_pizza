@@ -13,26 +13,25 @@ function Pizza({ nombre,
             <img src={imagen} alt={nombre} className="pizza-image" />
             <h2>{nombre}</h2>
             <p>{ingredientes.join(", ")}</p>
-            <p>${precio}</p>
+            {disponible ? <p>{precio}</p> : <p className="agotado">Agotado</p>}
         </div>
     )
 
 }
 
 export default function PizzaDetailList() {
-    
+
 
     return (
         pizzas.map((pizza) => (
-            pizza.disponible && (
-                <Pizza
-                    key={pizza.id}
-                    nombre={pizza.nombre}
-                    ingredientes={pizza.ingredientes}
-                    precio={pizza.precio}
-                    imagen={pizza.imagen}
-                />
-            )
+            <Pizza
+                key={pizza.id}
+                nombre={pizza.nombre}
+                ingredientes={pizza.ingredientes}
+                precio={pizza.precio}
+                imagen={pizza.imagen}
+                disponible={pizza.disponible}
+            />
+        )
         ))
-    )
 };
