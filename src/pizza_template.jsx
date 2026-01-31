@@ -11,7 +11,7 @@ function Pizza({ nombre,
             <img src={imagen} alt={nombre} className="pizza-image"/>
             <h2>{nombre}</h2>
             <p>{ingredientes.join(", ")}</p>
-            <p>{precio}</p>
+            <p>${precio}</p>
         </div>
     )
 
